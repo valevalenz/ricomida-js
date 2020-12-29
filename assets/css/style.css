@@ -1,0 +1,95 @@
+body{
+  font-family: 'Cabin', sans-serif;
+}
+
+span{
+  font-family: 'Lobster', cursive;
+  font-size:30px;
+}
+
+h1{
+  font-family: 'Cabin', sans-serif;
+  font-weight:700;
+  color:#373A3C;
+}
+
+.porciones{
+  font-family: 'Cabin', sans-serif;
+  font-weight:700;
+  font-size:20px;
+  color:#373A3C;
+}
+
+button{
+  font-family: 'Cabin', sans-serif;
+  font-weight:400;
+  font-size:16px;
+  color:#373A3C;
+}
+
+h3{
+    font-family: 'Cabin', sans-serif;
+    font-weight:400;
+    color:#373A3C;
+    font-size:20px;
+}
+
+p{
+      font-family: 'Cabin', sans-serif;
+      font-weight:400;
+      color:#373A3C;
+      font-size:20px;
+}
+
+
+h2{
+  font-family: 'Cabin', sans-serif;
+  font-weight:700;
+  color:#373A3C;
+  font-size:40px;
+}
+
+h5{
+  font-family: 'Cabin', sans-serif;
+  font-weight:700;
+  color:#373A3C;
+  font-size:23px;
+}
+
+.card-text{
+  font-family: 'Cabin', sans-serif;
+  font-weight:400;
+  color:#373A3C;
+  font-size:16px;
+}
+
+.suscribete{
+  font-family: 'Cabin', sans-serif;
+  font-weight:700;
+  font-size:40px;
+}
+
+h4{
+  font-family: 'Cabin', sans-serif;
+  font-weight:400;
+  font-size:30px;
+}
+
+
+.carousel-control-next{
+  border-radius: 100%; important!
+}
+
+
+
+footer{
+  font-size:35px;
+}
+
+navbar-brand{
+  font-size:35px;
+}
+
+ul li{
+  list-style: none;
+}

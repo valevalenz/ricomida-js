@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ricomida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--CSS de Bootstrap 4.2.1-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <!--Google Fonts - REQUERIMIENTO 1-->
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!--Mi estilo-->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<!-- Los requerimientos 1 a 6 son en el archivo html, del 7 al 9 en el archivo js -->
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark  text-white">
+    <!-- REQUERIMIENTO 2 BG-DARK -->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <span>Ricomida</span> </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Recetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="card my-3 mb-3">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="assets/img/principal.jpg" class="card-img img-fluid" alt="...">
+        </div>
+        <div class="col-sm-6">
+
+          <h1 class="card-title pt-5 ml-5">PIZZA AL ESTILO <br> CHICAGO CON <br> ESPINACAS Y <br> CHAMPIÑONES</h1>
+          <hr>
+          <p class="porciones ml-5">110 MIN / 6 A 8 PORCIONES</p>
+          <!-- REQUERIMIENTO 5 Incluir un botón "Enviar por correo" con un tooltip aplicado.
+                https://getbootstrap.com/docs/4.0/components/buttons/
+                https://getbootstrap.com/docs/4.0/components/tooltips/ Revisar archivo JS para la función que los activa
+          -->
+          <button type="button" id="enviarCorreo" class="btn btn-light mx-2" title="Presiona para enviar a tu correo" data-toggle="tooltip" data-placement="bottom">Enviar por correo</button>
+          <button type="button" class="btn btn-light mx-2" title="Agrega esta etiqueta a tus favoritos" data-toggle="tooltip" data-placement="right">Añadir a favoritos</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REQUERIMIENTO 4 Utilizar el carousel de Bootstrap con 2 carousel ítems y cada uno con 4 imágenes en
+su interior. Éste en tamaños sm, xs debe desaparecer.
+
+https://getbootstrap.com/docs/4.0/components/carousel/#with-indicators
+
+https://getbootstrap.com/docs/4.0/utilities/display/
+
+hide on screens smaller than lg
+
+<div class="d-lg-none">hide on screens wider than lg</div>
+<div class="d-none d-lg-block">hide on screens smaller than lg</div>
+
+ -->
+
+  <div class="container d-none d-md-block">
+    <div id="carouselExampleIndicators" class="carousel slide my-5" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active bg-dark"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-dark"></li>
+      </ol>
+      <div class="carousel-inner">
+        <!-- carrusel item 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="assets/img/slider-1.png" class=" img-fluid" alt="...">
+            </div>
+            <div class="col-sm-3">
+              <img src="assets/img/slider-2.png" class=" img-fluid" alt="...">
+            </div>
+            <div class="col-sm-3">
+              <img src="assets/img/slider-3.png" class=" img-fluid" alt="...">
+            </div>
+            <div class="col-sm-3">
+              <img src="assets/img/slider-4.png" class=" img-fluid" alt="...">
+            </div>
+          </div>
+        </div>
+        <!-- carrusel item 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="assets/img/slider-5.png" class=" img-fluid" alt="...">
+            </div>
+            <div class="col-sm-3">
+              <img src="assets/img/slider-6.png" class=" img-fluid" alt="...">
+            </div>
+            <div class="col-sm-3">
+              <img src="assets/img/slider-7.png" class=" img-fluid" alt="...">
+            </div>
+            <div class="col-sm-3">
+              <img src="assets/img/slider-8.png" class=" img-fluid" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      </a>
+
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <hr class="separador">
+    <div class="row">
+      <div class="ingredientes col-xs-12 col-md-6 text-left pl-5 ">
+        <h4> <u>INGREDIENTES </u></h4>
+
+        <h3>Masa <h3>
+            <ul>
+              <li>20 gr de levadura seca instantánea</li>
+              <li>1 cucharadita de azúcar 500 ml agua tibia</li>
+              <li>100 ml aceite vegetal</li>
+              <li>4 cucharadas de aceite de oliva</li>
+              <li>65 gr harina de maíz fina (chuchoca)</li>
+              <li>2 cucharaditas de sal</li>
+              <li>625 gr harina</li>
+            </ul>
+            <br>
+
+            <h3>Salsa</h3>
+            <ul>
+              <li>5 cucharadas de aceite de oliva</li>
+              <li>½ cebolla picada en cubos finos</li>
+              <li>2 cucharaditas de sal</li>
+              <li>3 cucharadas de Orégano Gourmet</li>
+              <li>1 ½ cucharadas de Albahaca Gourmet </li>
+              <li>2 tarro de tomates en cubos al natural</li>
+              <li>2 cucharaditas de azúcar</li>
+            </ul>
+
+            <h3>Relleno</h3> 
+            <ul>
+              <li>½ cebolla, en cubos</li>
+              <li>500 gr hojas de espinacas picadas</li>
+              <li>400 gr de champiñones, laminados</li>
+              <li>300 gr de queso mozarella.</li>
+              <li>4 cucharadas queso parmesano</li>
+            </ul>
+      </div>
+
+      <div class="preparacion col-xs-12 col-md-6 text-left pr-5">
+        <h4> <u> PREPARACIÓN </u> </h4>
+
+        <ol>
+          <li> Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos. Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el resto de harina, la cantidad
+            necesaria
+            para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a medida que se va amasando para que la masa no se pegue) . Poner la masa en un bol aceitado, tapar
+            con
+            un paño de cocina limpio y dejar reposar hasta que la masa duplique su volumen (leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos adicionales.</li>
+
+          <li>Mientras tanto preparar la salsa: Calentar 4 cucharadas de aceite en una olla a fuego medio. Agregar la cebolla, Orégano Gourmet, Albahaca Gourmet, sal y cocinar hasta que la cebolla esté dorada. Agregar el ajo y cocinar por 30
+            segundos.
+            Agregar los tomates junto al jugo del tarro, a la mezcla de cebolla. Agregar el azúcar y cocinar hasta que la mezcla se haya reducido y espesado, como 30 minutos. Sazonar con sal y pimienta a gusto. Reservar.</li>
+          <li> Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes. Agregar los champiñones y las espinacas, cocinar hasta que estén cocidos y se haya evaporado todo el líquido que hayan votado los vegetales. Reservar.
+          </li>
+          <li> Calentar el horno a 220C.</li>
+          <li> Una vez que la masa haya reposado, dividirla en dos bolas. Estirar cada masa para cubrir dos moldes (desmontables) de 26 cm, hacer un borde de 5 cm con la masa. Dividir el relleno entre las dos pizza, tapar con el queso mozarella,
+            luego
+            terminar con la salsa de tomates y finalmente espolvorear el queso rallado. 6. Hornear por 35 a 40 minutos o hasta que el relleno esté caliente y la base esté esponjosa y dorada. Esperar unos minutos antes de desmoldar.</li>
+        </ol>
+
+      </div>
+
+    </div>
+
+    <hr>
+  </div>
+
+  <div class="container">
+    <section class="mx-5 my-5">
+      <h2 class="text-center mb-5">RECETAS RELACIONADAS</h2>
+      <div class="card-deck">
+        <div class="card">
+          <img src="assets/img/recipe-card-1.png" class="card-img-top" alt="PANQUEQUES CON MANJAR Y CREMA">
+          <div class="card-body body-panqueque">
+            <h5 class="card-title panqueques">PANQUEQUES CON MANJAR Y CREMA</h5>
+            <p class="card-text texto-panqueque">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/recipe-card-2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title tiramisu">TIRAMISÚ</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/img/recipe-card-3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title plateada">PLATEADA</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- REQUERIMIENTO 3
+Debe existir una sección con la clase newsletter donde debe existir la clase
+correspondiente para asignarle el color de fondo bg-danger. -->
+
+  <section class="newsletter bg-danger text-white text-center">
+    <h2 class="pt-5 text-white suscribete">SUSCRÍBETE EN NUESTRO NEWSLETTER</h2>
+    <h4>y obtén las mejores recetas que tenemos en <span>Ricomida</span></h4>
+    <!--  REQUERIMIENTO 6 En la clase “newsletter” debe existir un elemento span con "Ricomida" en su interior
+para aplicar la tipografía lobster. -->
+    <button type="button" class="btn btn-outline-light mb-5 mt-2 px-5">Empezar</button>
+  </section>
+
+  <footer class="bg-dark text-white text-center">
+    <!-- REQUERIMIENTO 2 BG-DARK -->
+    <span class="mb-5">Ricomida</span>
+  </footer>
+
+
+  <!--jQuery 3.3.1 sin slim-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <!--Popper JS 1.14.3-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+  <!--Bootstrap JS 4.2.1-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!--Mi script-->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
